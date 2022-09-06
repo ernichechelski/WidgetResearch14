@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct WidgetResearch14App: App {
+    
+    @StateObject var appLogic = AppLogic()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appLogic)
         }
     }
 }

@@ -14,6 +14,22 @@
 		A338EDDF28C73C2200BB858C /* WidgetResearch14Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EDDE28C73C2200BB858C /* WidgetResearch14Tests.swift */; };
 		A338EDE928C73C2200BB858C /* WidgetResearch14UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EDE828C73C2200BB858C /* WidgetResearch14UITests.swift */; };
 		A338EDEB28C73C2200BB858C /* WidgetResearch14UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EDEA28C73C2200BB858C /* WidgetResearch14UITestsLaunchTests.swift */; };
+		A338EDFE28C73EED00BB858C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A338EDFD28C73EED00BB858C /* WidgetKit.framework */; };
+		A338EE0028C73EED00BB858C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A338EDFF28C73EED00BB858C /* SwiftUI.framework */; };
+		A338EE0328C73EED00BB858C /* WidgetResearchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE0228C73EED00BB858C /* WidgetResearchWidget.swift */; };
+		A338EE0528C73EF100BB858C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A338EE0428C73EF100BB858C /* Assets.xcassets */; };
+		A338EE0928C73EF100BB858C /* WidgetResearchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A338EDFB28C73EED00BB858C /* WidgetResearchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A338EE1328C7418100BB858C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A338EDFD28C73EED00BB858C /* WidgetKit.framework */; };
+		A338EE1428C7418100BB858C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A338EDFF28C73EED00BB858C /* SwiftUI.framework */; };
+		A338EE1728C7418100BB858C /* EarnedMoneyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE1628C7418100BB858C /* EarnedMoneyWidget.swift */; };
+		A338EE1928C7418200BB858C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A338EE1828C7418200BB858C /* Assets.xcassets */; };
+		A338EE1D28C7418200BB858C /* EarnedMoneyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A338EE1228C7418100BB858C /* EarnedMoneyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A338EE2328C7468A00BB858C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2228C7468A00BB858C /* Extensions.swift */; };
+		A338EE2428C7468A00BB858C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2228C7468A00BB858C /* Extensions.swift */; };
+		A338EE2528C7468A00BB858C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2228C7468A00BB858C /* Extensions.swift */; };
+		A338EE2A28C7563C00BB858C /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2928C7563C00BB858C /* AppLogic.swift */; };
+		A338EE2B28C7563C00BB858C /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2928C7563C00BB858C /* AppLogic.swift */; };
+		A338EE2C28C7563C00BB858C /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2928C7563C00BB858C /* AppLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +47,36 @@
 			remoteGlobalIDString = A338EDC828C73C1F00BB858C;
 			remoteInfo = WidgetResearch14;
 		};
+		A338EE0728C73EF100BB858C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A338EDC128C73C1F00BB858C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A338EDFA28C73EED00BB858C;
+			remoteInfo = WidgetResearchWidgetExtension;
+		};
+		A338EE1B28C7418200BB858C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A338EDC128C73C1F00BB858C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A338EE1128C7418100BB858C;
+			remoteInfo = EarnedMoneyWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A338EE0D28C73EF200BB858C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A338EE1D28C7418200BB858C /* EarnedMoneyWidgetExtension.appex in Embed Foundation Extensions */,
+				A338EE0928C73EF100BB858C /* WidgetResearchWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A338EDC928C73C1F00BB858C /* WidgetResearch14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetResearch14.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +90,20 @@
 		A338EDE428C73C2200BB858C /* WidgetResearch14UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetResearch14UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A338EDE828C73C2200BB858C /* WidgetResearch14UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetResearch14UITests.swift; sourceTree = "<group>"; };
 		A338EDEA28C73C2200BB858C /* WidgetResearch14UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetResearch14UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A338EDFB28C73EED00BB858C /* WidgetResearchWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetResearchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A338EDFD28C73EED00BB858C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A338EDFF28C73EED00BB858C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A338EE0228C73EED00BB858C /* WidgetResearchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetResearchWidget.swift; sourceTree = "<group>"; };
+		A338EE0428C73EF100BB858C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A338EE0628C73EF100BB858C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A338EE1228C7418100BB858C /* EarnedMoneyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EarnedMoneyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A338EE1628C7418100BB858C /* EarnedMoneyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarnedMoneyWidget.swift; sourceTree = "<group>"; };
+		A338EE1828C7418200BB858C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A338EE1A28C7418200BB858C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A338EE2228C7468A00BB858C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A338EE2628C7475000BB858C /* WidgetResearchWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetResearchWidgetExtension.entitlements; sourceTree = "<group>"; };
+		A338EE2828C7549B00BB858C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A338EE2928C7563C00BB858C /* AppLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +128,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A338EDF828C73EED00BB858C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A338EE0028C73EED00BB858C /* SwiftUI.framework in Frameworks */,
+				A338EDFE28C73EED00BB858C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A338EE0F28C7418100BB858C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A338EE1428C7418100BB858C /* SwiftUI.framework in Frameworks */,
+				A338EE1328C7418100BB858C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A338EDC028C73C1F00BB858C = {
 			isa = PBXGroup;
 			children = (
+				A338EE2628C7475000BB858C /* WidgetResearchWidgetExtension.entitlements */,
+				A338EE2128C7467800BB858C /* Shared */,
 				A338EDCB28C73C1F00BB858C /* WidgetResearch14 */,
 				A338EDDD28C73C2200BB858C /* WidgetResearch14Tests */,
 				A338EDE728C73C2200BB858C /* WidgetResearch14UITests */,
+				A338EE0128C73EED00BB858C /* WidgetResearchWidget */,
+				A338EE1528C7418100BB858C /* EarnedMoneyWidget */,
+				A338EDFC28C73EED00BB858C /* Frameworks */,
 				A338EDCA28C73C1F00BB858C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +170,8 @@
 				A338EDC928C73C1F00BB858C /* WidgetResearch14.app */,
 				A338EDDA28C73C2200BB858C /* WidgetResearch14Tests.xctest */,
 				A338EDE428C73C2200BB858C /* WidgetResearch14UITests.xctest */,
+				A338EDFB28C73EED00BB858C /* WidgetResearchWidgetExtension.appex */,
+				A338EE1228C7418100BB858C /* EarnedMoneyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,11 +179,13 @@
 		A338EDCB28C73C1F00BB858C /* WidgetResearch14 */ = {
 			isa = PBXGroup;
 			children = (
+				A338EE2828C7549B00BB858C /* Info.plist */,
 				A338EDCC28C73C1F00BB858C /* WidgetResearch14App.swift */,
 				A338EDCE28C73C1F00BB858C /* ContentView.swift */,
 				A338EDD028C73C2100BB858C /* Assets.xcassets */,
 				A338EDD228C73C2100BB858C /* WidgetResearch14.entitlements */,
 				A338EDD328C73C2100BB858C /* Preview Content */,
+				A338EE2928C7563C00BB858C /* AppLogic.swift */,
 			);
 			path = WidgetResearch14;
 			sourceTree = "<group>";
@@ -129,6 +215,43 @@
 			path = WidgetResearch14UITests;
 			sourceTree = "<group>";
 		};
+		A338EDFC28C73EED00BB858C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A338EDFD28C73EED00BB858C /* WidgetKit.framework */,
+				A338EDFF28C73EED00BB858C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A338EE0128C73EED00BB858C /* WidgetResearchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A338EE0228C73EED00BB858C /* WidgetResearchWidget.swift */,
+				A338EE0428C73EF100BB858C /* Assets.xcassets */,
+				A338EE0628C73EF100BB858C /* Info.plist */,
+			);
+			path = WidgetResearchWidget;
+			sourceTree = "<group>";
+		};
+		A338EE1528C7418100BB858C /* EarnedMoneyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A338EE1628C7418100BB858C /* EarnedMoneyWidget.swift */,
+				A338EE1828C7418200BB858C /* Assets.xcassets */,
+				A338EE1A28C7418200BB858C /* Info.plist */,
+			);
+			path = EarnedMoneyWidget;
+			sourceTree = "<group>";
+		};
+		A338EE2128C7467800BB858C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A338EE2228C7468A00BB858C /* Extensions.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +262,13 @@
 				A338EDC528C73C1F00BB858C /* Sources */,
 				A338EDC628C73C1F00BB858C /* Frameworks */,
 				A338EDC728C73C1F00BB858C /* Resources */,
+				A338EE0D28C73EF200BB858C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A338EE0828C73EF100BB858C /* PBXTargetDependency */,
+				A338EE1C28C7418200BB858C /* PBXTargetDependency */,
 			);
 			name = WidgetResearch14;
 			productName = WidgetResearch14;
@@ -185,6 +311,40 @@
 			productReference = A338EDE428C73C2200BB858C /* WidgetResearch14UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A338EDFA28C73EED00BB858C /* WidgetResearchWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A338EE0A28C73EF200BB858C /* Build configuration list for PBXNativeTarget "WidgetResearchWidgetExtension" */;
+			buildPhases = (
+				A338EDF728C73EED00BB858C /* Sources */,
+				A338EDF828C73EED00BB858C /* Frameworks */,
+				A338EDF928C73EED00BB858C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetResearchWidgetExtension;
+			productName = WidgetResearchWidgetExtension;
+			productReference = A338EDFB28C73EED00BB858C /* WidgetResearchWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A338EE1128C7418100BB858C /* EarnedMoneyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A338EE1E28C7418200BB858C /* Build configuration list for PBXNativeTarget "EarnedMoneyWidgetExtension" */;
+			buildPhases = (
+				A338EE0E28C7418100BB858C /* Sources */,
+				A338EE0F28C7418100BB858C /* Frameworks */,
+				A338EE1028C7418100BB858C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarnedMoneyWidgetExtension;
+			productName = EarnedMoneyWidgetExtension;
+			productReference = A338EE1228C7418100BB858C /* EarnedMoneyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +366,12 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = A338EDC828C73C1F00BB858C;
 					};
+					A338EDFA28C73EED00BB858C = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					A338EE1128C7418100BB858C = {
+						CreatedOnToolsVersion = 14.0;
+					};
 				};
 			};
 			buildConfigurationList = A338EDC428C73C1F00BB858C /* Build configuration list for PBXProject "WidgetResearch14" */;
@@ -224,6 +390,8 @@
 				A338EDC828C73C1F00BB858C /* WidgetResearch14 */,
 				A338EDD928C73C2200BB858C /* WidgetResearch14Tests */,
 				A338EDE328C73C2200BB858C /* WidgetResearch14UITests */,
+				A338EDFA28C73EED00BB858C /* WidgetResearchWidgetExtension */,
+				A338EE1128C7418100BB858C /* EarnedMoneyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +420,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A338EDF928C73EED00BB858C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A338EE0528C73EF100BB858C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A338EE1028C7418100BB858C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A338EE1928C7418200BB858C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,7 +443,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A338EE2A28C7563C00BB858C /* AppLogic.swift in Sources */,
 				A338EDCF28C73C1F00BB858C /* ContentView.swift in Sources */,
+				A338EE2328C7468A00BB858C /* Extensions.swift in Sources */,
 				A338EDCD28C73C1F00BB858C /* WidgetResearch14App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +467,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A338EDF728C73EED00BB858C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A338EE2B28C7563C00BB858C /* AppLogic.swift in Sources */,
+				A338EE0328C73EED00BB858C /* WidgetResearchWidget.swift in Sources */,
+				A338EE2428C7468A00BB858C /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A338EE0E28C7418100BB858C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A338EE2C28C7563C00BB858C /* AppLogic.swift in Sources */,
+				A338EE1728C7418100BB858C /* EarnedMoneyWidget.swift in Sources */,
+				A338EE2528C7468A00BB858C /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +499,16 @@
 			isa = PBXTargetDependency;
 			target = A338EDC828C73C1F00BB858C /* WidgetResearch14 */;
 			targetProxy = A338EDE528C73C2200BB858C /* PBXContainerItemProxy */;
+		};
+		A338EE0828C73EF100BB858C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A338EDFA28C73EED00BB858C /* WidgetResearchWidgetExtension */;
+			targetProxy = A338EE0728C73EF100BB858C /* PBXContainerItemProxy */;
+		};
+		A338EE1C28C7418200BB858C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A338EE1128C7418100BB858C /* EarnedMoneyWidgetExtension */;
+			targetProxy = A338EE1B28C7418200BB858C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,6 +625,7 @@
 		A338EDEF28C73C2200BB858C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WidgetResearch14/WidgetResearch14.entitlements;
@@ -419,6 +636,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetResearch14/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -447,6 +665,7 @@
 		A338EDF028C73C2200BB858C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WidgetResearch14/WidgetResearch14.entitlements;
@@ -457,6 +676,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetResearch14/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -572,6 +792,126 @@
 			};
 			name = Release;
 		};
+		A338EE0B28C73EF200BB858C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetResearchWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8VPEQS329;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetResearchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetResearchWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ernichechelski.WidgetResearch14.WidgetResearchWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A338EE0C28C73EF200BB858C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetResearchWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8VPEQS329;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetResearchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetResearchWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ernichechelski.WidgetResearch14.WidgetResearchWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A338EE1F28C7418200BB858C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8VPEQS329;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EarnedMoneyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EarnedMoneyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ernichechelski.WidgetResearch14.EarnedMoneyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A338EE2028C7418200BB858C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8VPEQS329;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EarnedMoneyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EarnedMoneyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ernichechelski.WidgetResearch14.EarnedMoneyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,6 +947,24 @@
 			buildConfigurations = (
 				A338EDF528C73C2200BB858C /* Debug */,
 				A338EDF628C73C2200BB858C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A338EE0A28C73EF200BB858C /* Build configuration list for PBXNativeTarget "WidgetResearchWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A338EE0B28C73EF200BB858C /* Debug */,
+				A338EE0C28C73EF200BB858C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A338EE1E28C7418200BB858C /* Build configuration list for PBXNativeTarget "EarnedMoneyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A338EE1F28C7418200BB858C /* Debug */,
+				A338EE2028C7418200BB858C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
