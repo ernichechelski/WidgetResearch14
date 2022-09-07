@@ -5,26 +5,27 @@
 //  Created by Ernest Chechelski on 06/09/2022.
 //
 
-import ActivityKit
 import Foundation
 import WidgetKit
+import SwiftUI
 
 extension UserDefaults {
+    /// Returns shared via AppGroup UserDefaults.
     static var appGroup: UserDefaults {
         UserDefaults(suiteName: "group.ernichechelski.CodeWidget")!
     }
 }
 
-import Combine
-
 extension URLSession {
-    func randomNumberPublisher() async throws -> Int {
+    /// Returns random number fetched from the server.
+    func randomNumberRequest() async throws -> Int {
         let (data, _) = try await URLSession.shared.data(from: URL(string: "http://localhost:8080/")!)
         return Int(data.uint8)
     }
 }
 
 extension Data {
+    /// Parses data to Int value.
     var uint8: UInt8 {
         var number: UInt8 = 0
         self.copyBytes(to: &number, count: MemoryLayout<UInt8>.size)
@@ -32,40 +33,17 @@ extension Data {
     }
 }
 
-import ActivityKit
-import SwiftUI
-import WidgetKit
-
-struct MoneyAttributes: ActivityAttributes {
-    public typealias MoneyStatus = ContentState
-
-    public struct ContentState: Codable, Hashable {
-        var maxExpectedMoney: Int
-        var expectedDate: Date
-    }
-
-    var currentMoney: Int
-}
-
-struct NextMoneyActivityWidget: Widget {
-    var body: some WidgetConfiguration {
-        ActivityConfiguration(attributesType: MoneyAttributes.self) { context in
-            VStack(alignment: .leading) {
-                Text("You have \(context.attributes.currentMoney)")
-                HStack {
-                    Text("You can have even \(context.state.maxExpectedMoney), just wait to:")
-                    Text(context.state.expectedDate, style: .timer)
-                }
-            }
-            .padding(5)
-            .activityBackgroundTint(Color.cyan)
-        }
+extension FormatStyle {
+    /// Format style for Polish Złoty currency.
+    static func pln<V>() -> Self where Self == IntegerFormatStyle<V>.Currency, V : BinaryInteger {
+        .currency(code: "PLN")
     }
 }
 
 extension Date {
+    /// Expected date description. This is just UI helper.
     var asExpectedDescription: String {
-        guard self.timeIntervalSinceNow >= 0.0 else {
+        guard isFuture else {
             return "Please schedule next money!"
         }
         
@@ -73,5 +51,10 @@ extension Date {
         formatter.dateStyle = .full
         formatter.timeStyle = .long
         return formatter.string(from: self)
+    }
+    
+    /// Returns true if date is in future.
+    var isFuture: Bool {
+        timeIntervalSinceNow >= 0.0
     }
 }

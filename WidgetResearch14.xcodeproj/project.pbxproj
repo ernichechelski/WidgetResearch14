@@ -19,17 +19,19 @@
 		A338EE0328C73EED00BB858C /* WidgetResearchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE0228C73EED00BB858C /* WidgetResearchWidget.swift */; };
 		A338EE0528C73EF100BB858C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A338EE0428C73EF100BB858C /* Assets.xcassets */; };
 		A338EE0928C73EF100BB858C /* WidgetResearchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A338EDFB28C73EED00BB858C /* WidgetResearchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A338EE1328C7418100BB858C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A338EDFD28C73EED00BB858C /* WidgetKit.framework */; };
-		A338EE1428C7418100BB858C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A338EDFF28C73EED00BB858C /* SwiftUI.framework */; };
-		A338EE1728C7418100BB858C /* EarnedMoneyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE1628C7418100BB858C /* EarnedMoneyWidget.swift */; };
-		A338EE1928C7418200BB858C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A338EE1828C7418200BB858C /* Assets.xcassets */; };
-		A338EE1D28C7418200BB858C /* EarnedMoneyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A338EE1228C7418100BB858C /* EarnedMoneyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A338EE2328C7468A00BB858C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2228C7468A00BB858C /* Extensions.swift */; };
 		A338EE2428C7468A00BB858C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2228C7468A00BB858C /* Extensions.swift */; };
-		A338EE2528C7468A00BB858C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2228C7468A00BB858C /* Extensions.swift */; };
 		A338EE2A28C7563C00BB858C /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2928C7563C00BB858C /* AppLogic.swift */; };
 		A338EE2B28C7563C00BB858C /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2928C7563C00BB858C /* AppLogic.swift */; };
-		A338EE2C28C7563C00BB858C /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2928C7563C00BB858C /* AppLogic.swift */; };
+		A3DD9AA528C8A5F90075BCA5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A338EE2228C7468A00BB858C /* Extensions.swift */; };
+		A3DD9AAC28C8A8E30075BCA5 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DD9AA628C8A8930075BCA5 /* Provider.swift */; };
+		A3DD9AAD28C8A8EB0075BCA5 /* WidgetResearchWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DD9AAA28C8A8C70075BCA5 /* WidgetResearchWidgets.swift */; };
+		A3DD9AAE28C8A8EF0075BCA5 /* WidgetResearchWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DD9AA828C8A8B40075BCA5 /* WidgetResearchWidgetEntryView.swift */; };
+		A3DD9AB128C8A9270075BCA5 /* WidgetResearchLockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DD9AAF28C8A90A0075BCA5 /* WidgetResearchLockScreenWidget.swift */; };
+		A3DD9AB328C8A95E0075BCA5 /* NextMoneyActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DD9AB228C8A95E0075BCA5 /* NextMoneyActivityWidget.swift */; };
+		A3DD9AB428C8A95E0075BCA5 /* NextMoneyActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DD9AB228C8A95E0075BCA5 /* NextMoneyActivityWidget.swift */; };
+		A3DD9AB628C8B3610075BCA5 /* server.js in Resources */ = {isa = PBXBuildFile; fileRef = A3DD9AB528C8B3600075BCA5 /* server.js */; };
+		A3DD9AB728C8B3610075BCA5 /* server.js in Resources */ = {isa = PBXBuildFile; fileRef = A3DD9AB528C8B3600075BCA5 /* server.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +56,6 @@
 			remoteGlobalIDString = A338EDFA28C73EED00BB858C;
 			remoteInfo = WidgetResearchWidgetExtension;
 		};
-		A338EE1B28C7418200BB858C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A338EDC128C73C1F00BB858C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A338EE1128C7418100BB858C;
-			remoteInfo = EarnedMoneyWidgetExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,7 +65,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A338EE1D28C7418200BB858C /* EarnedMoneyWidgetExtension.appex in Embed Foundation Extensions */,
 				A338EE0928C73EF100BB858C /* WidgetResearchWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -96,14 +90,17 @@
 		A338EE0228C73EED00BB858C /* WidgetResearchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetResearchWidget.swift; sourceTree = "<group>"; };
 		A338EE0428C73EF100BB858C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A338EE0628C73EF100BB858C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A338EE1228C7418100BB858C /* EarnedMoneyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EarnedMoneyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		A338EE1628C7418100BB858C /* EarnedMoneyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarnedMoneyWidget.swift; sourceTree = "<group>"; };
-		A338EE1828C7418200BB858C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A338EE1A28C7418200BB858C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A338EE2228C7468A00BB858C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A338EE2628C7475000BB858C /* WidgetResearchWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetResearchWidgetExtension.entitlements; sourceTree = "<group>"; };
 		A338EE2828C7549B00BB858C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A338EE2928C7563C00BB858C /* AppLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogic.swift; sourceTree = "<group>"; };
+		A3DD9AA628C8A8930075BCA5 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		A3DD9AA828C8A8B40075BCA5 /* WidgetResearchWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetResearchWidgetEntryView.swift; sourceTree = "<group>"; };
+		A3DD9AAA28C8A8C70075BCA5 /* WidgetResearchWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetResearchWidgets.swift; sourceTree = "<group>"; };
+		A3DD9AAF28C8A90A0075BCA5 /* WidgetResearchLockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetResearchLockScreenWidget.swift; sourceTree = "<group>"; };
+		A3DD9AB228C8A95E0075BCA5 /* NextMoneyActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMoneyActivityWidget.swift; sourceTree = "<group>"; };
+		A3DD9AB528C8B3600075BCA5 /* server.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = server.js; path = Backend/server.js; sourceTree = "<group>"; };
+		A3DD9AB828C8B3790075BCA5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,28 +134,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A338EE0F28C7418100BB858C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A338EE1428C7418100BB858C /* SwiftUI.framework in Frameworks */,
-				A338EE1328C7418100BB858C /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A338EDC028C73C1F00BB858C = {
 			isa = PBXGroup;
 			children = (
+				A3DD9AB828C8B3790075BCA5 /* README.md */,
+				A3DD9AB528C8B3600075BCA5 /* server.js */,
 				A338EE2628C7475000BB858C /* WidgetResearchWidgetExtension.entitlements */,
 				A338EE2128C7467800BB858C /* Shared */,
 				A338EDCB28C73C1F00BB858C /* WidgetResearch14 */,
 				A338EDDD28C73C2200BB858C /* WidgetResearch14Tests */,
 				A338EDE728C73C2200BB858C /* WidgetResearch14UITests */,
 				A338EE0128C73EED00BB858C /* WidgetResearchWidget */,
-				A338EE1528C7418100BB858C /* EarnedMoneyWidget */,
 				A338EDFC28C73EED00BB858C /* Frameworks */,
 				A338EDCA28C73C1F00BB858C /* Products */,
 			);
@@ -171,7 +160,6 @@
 				A338EDDA28C73C2200BB858C /* WidgetResearch14Tests.xctest */,
 				A338EDE428C73C2200BB858C /* WidgetResearch14UITests.xctest */,
 				A338EDFB28C73EED00BB858C /* WidgetResearchWidgetExtension.appex */,
-				A338EE1228C7418100BB858C /* EarnedMoneyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,27 +215,22 @@
 		A338EE0128C73EED00BB858C /* WidgetResearchWidget */ = {
 			isa = PBXGroup;
 			children = (
-				A338EE0228C73EED00BB858C /* WidgetResearchWidget.swift */,
-				A338EE0428C73EF100BB858C /* Assets.xcassets */,
 				A338EE0628C73EF100BB858C /* Info.plist */,
+				A3DD9AA628C8A8930075BCA5 /* Provider.swift */,
+				A338EE0228C73EED00BB858C /* WidgetResearchWidget.swift */,
+				A3DD9AAF28C8A90A0075BCA5 /* WidgetResearchLockScreenWidget.swift */,
+				A3DD9AA828C8A8B40075BCA5 /* WidgetResearchWidgetEntryView.swift */,
+				A3DD9AAA28C8A8C70075BCA5 /* WidgetResearchWidgets.swift */,
+				A338EE0428C73EF100BB858C /* Assets.xcassets */,
 			);
 			path = WidgetResearchWidget;
-			sourceTree = "<group>";
-		};
-		A338EE1528C7418100BB858C /* EarnedMoneyWidget */ = {
-			isa = PBXGroup;
-			children = (
-				A338EE1628C7418100BB858C /* EarnedMoneyWidget.swift */,
-				A338EE1828C7418200BB858C /* Assets.xcassets */,
-				A338EE1A28C7418200BB858C /* Info.plist */,
-			);
-			path = EarnedMoneyWidget;
 			sourceTree = "<group>";
 		};
 		A338EE2128C7467800BB858C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				A338EE2228C7468A00BB858C /* Extensions.swift */,
+				A3DD9AB228C8A95E0075BCA5 /* NextMoneyActivityWidget.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -268,7 +251,6 @@
 			);
 			dependencies = (
 				A338EE0828C73EF100BB858C /* PBXTargetDependency */,
-				A338EE1C28C7418200BB858C /* PBXTargetDependency */,
 			);
 			name = WidgetResearch14;
 			productName = WidgetResearch14;
@@ -328,23 +310,6 @@
 			productReference = A338EDFB28C73EED00BB858C /* WidgetResearchWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		A338EE1128C7418100BB858C /* EarnedMoneyWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A338EE1E28C7418200BB858C /* Build configuration list for PBXNativeTarget "EarnedMoneyWidgetExtension" */;
-			buildPhases = (
-				A338EE0E28C7418100BB858C /* Sources */,
-				A338EE0F28C7418100BB858C /* Frameworks */,
-				A338EE1028C7418100BB858C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = EarnedMoneyWidgetExtension;
-			productName = EarnedMoneyWidgetExtension;
-			productReference = A338EE1228C7418100BB858C /* EarnedMoneyWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -369,9 +334,6 @@
 					A338EDFA28C73EED00BB858C = {
 						CreatedOnToolsVersion = 14.0;
 					};
-					A338EE1128C7418100BB858C = {
-						CreatedOnToolsVersion = 14.0;
-					};
 				};
 			};
 			buildConfigurationList = A338EDC428C73C1F00BB858C /* Build configuration list for PBXProject "WidgetResearch14" */;
@@ -391,7 +353,6 @@
 				A338EDD928C73C2200BB858C /* WidgetResearch14Tests */,
 				A338EDE328C73C2200BB858C /* WidgetResearch14UITests */,
 				A338EDFA28C73EED00BB858C /* WidgetResearchWidgetExtension */,
-				A338EE1128C7418100BB858C /* EarnedMoneyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -402,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A338EDD528C73C2100BB858C /* Preview Assets.xcassets in Resources */,
+				A3DD9AB628C8B3610075BCA5 /* server.js in Resources */,
 				A338EDD128C73C2100BB858C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,14 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A338EE0528C73EF100BB858C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A338EE1028C7418100BB858C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A338EE1928C7418200BB858C /* Assets.xcassets in Resources */,
+				A3DD9AB728C8B3610075BCA5 /* server.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +400,7 @@
 			files = (
 				A338EE2A28C7563C00BB858C /* AppLogic.swift in Sources */,
 				A338EDCF28C73C1F00BB858C /* ContentView.swift in Sources */,
+				A3DD9AB328C8A95E0075BCA5 /* NextMoneyActivityWidget.swift in Sources */,
 				A338EE2328C7468A00BB858C /* Extensions.swift in Sources */,
 				A338EDCD28C73C1F00BB858C /* WidgetResearch14App.swift in Sources */,
 			);
@@ -463,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A338EDEB28C73C2200BB858C /* WidgetResearch14UITestsLaunchTests.swift in Sources */,
+				A3DD9AA528C8A5F90075BCA5 /* Extensions.swift in Sources */,
 				A338EDE928C73C2200BB858C /* WidgetResearch14UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,19 +428,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DD9AB428C8A95E0075BCA5 /* NextMoneyActivityWidget.swift in Sources */,
+				A3DD9AAE28C8A8EF0075BCA5 /* WidgetResearchWidgetEntryView.swift in Sources */,
+				A3DD9AAC28C8A8E30075BCA5 /* Provider.swift in Sources */,
 				A338EE2B28C7563C00BB858C /* AppLogic.swift in Sources */,
 				A338EE0328C73EED00BB858C /* WidgetResearchWidget.swift in Sources */,
+				A3DD9AB128C8A9270075BCA5 /* WidgetResearchLockScreenWidget.swift in Sources */,
 				A338EE2428C7468A00BB858C /* Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A338EE0E28C7418100BB858C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A338EE2C28C7563C00BB858C /* AppLogic.swift in Sources */,
-				A338EE1728C7418100BB858C /* EarnedMoneyWidget.swift in Sources */,
-				A338EE2528C7468A00BB858C /* Extensions.swift in Sources */,
+				A3DD9AAD28C8A8EB0075BCA5 /* WidgetResearchWidgets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,11 +456,6 @@
 			isa = PBXTargetDependency;
 			target = A338EDFA28C73EED00BB858C /* WidgetResearchWidgetExtension */;
 			targetProxy = A338EE0728C73EF100BB858C /* PBXContainerItemProxy */;
-		};
-		A338EE1C28C7418200BB858C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A338EE1128C7418100BB858C /* EarnedMoneyWidgetExtension */;
-			targetProxy = A338EE1B28C7418200BB858C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -637,6 +584,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetResearch14/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Research 14";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -677,6 +625,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetResearch14/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Widget Research 14";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -853,65 +802,6 @@
 			};
 			name = Release;
 		};
-		A338EE1F28C7418200BB858C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8VPEQS329;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EarnedMoneyWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = EarnedMoneyWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ernichechelski.WidgetResearch14.EarnedMoneyWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A338EE2028C7418200BB858C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8VPEQS329;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EarnedMoneyWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = EarnedMoneyWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ernichechelski.WidgetResearch14.EarnedMoneyWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -956,15 +846,6 @@
 			buildConfigurations = (
 				A338EE0B28C73EF200BB858C /* Debug */,
 				A338EE0C28C73EF200BB858C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A338EE1E28C7418200BB858C /* Build configuration list for PBXNativeTarget "EarnedMoneyWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A338EE1F28C7418200BB858C /* Debug */,
-				A338EE2028C7418200BB858C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
